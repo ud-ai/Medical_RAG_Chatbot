@@ -467,7 +467,7 @@ if __name__ == "__main__":
     demo.launch(
         server_name="0.0.0.0",
         server_port=int(os.environ.get("PORT", 7865)),
-        share=True,   # set True for public link
+        share=False,  # keep false for cloud deployments
         debug=False,
         css=CSS,
         theme=gr.themes.Soft()
